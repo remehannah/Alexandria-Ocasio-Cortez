@@ -6,10 +6,10 @@
         {
             {')', -1},
             {'(', 1}
-        };
+        }; // each character corresponds to the direction Santa has to move
 
-        private int _currentFloor = 0;
-        private int _characterPosition = 0;
+        private int _currentFloor = 0; // current floor Santa is located on
+        private int _characterPosition = 0; // index of the current character
 
         void TraverseThroughFloors(string path)
         {
