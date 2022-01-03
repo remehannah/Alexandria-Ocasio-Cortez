@@ -2,14 +2,19 @@ from os import path
 
 dir_path = path.dirname(path.dirname(path.realpath(__file__)))
 
-file = open(f"{dir_path}/input.txt").read()
-symbols = iter(input())
+symbols = open(f"{dir_path}/input.txt").read()
 
-steps_taken = 0
-current_floor = 0
+floor_ = 0
 
-while current_floor!= -1:
-    current_floor += -1 if next(symbols) == ')' else 1
-    steps_taken += 1
+def floorer(val):
+    global floor_
+    if val == '(':
+        floor_ += 1
+    else:
+        floor_ -= 1
+    return floor_
 
-print(f"Santa reached the basement after {steps_taken} steps")
+position = list(map(floorer, symbols)).index(-1) + 1
+
+print(f"Santa reached the basement after {position} steps")
+
