@@ -35,10 +35,27 @@
         }
 
 
+        void Traverse2(string path)
+        {
+            var symbols = File.ReadAllText(path);
+
+            // var santaFloor = symbols.Select(x => x.Equals(')') ? -1 : 1).Sum();
+            var santaFloor = symbols.Sum(x => x.Equals(')') ? -1 : 1);
+            Console.WriteLine($"Santa is on floor: {santaFloor}");
+            var floor = 0;
+            var santoBasement = Array.IndexOf(symbols
+                                                        .Select(x => x == '(' ? ++floor : --floor)
+                                                        .ToArray(), -1) + 1;
+            Console.WriteLine($"The basement is located at position: {santoBasement}");
+
+        }
+
+
         static void Main()
         {
             NotQuiteLisp notQuiteLisp = new NotQuiteLisp();
             const string filePath = "/home/jaleelvs/Desktop/AOC/2015/day_1/input.txt";
+            notQuiteLisp.Traverse2(filePath);
             notQuiteLisp.TraverseThroughFloors(filePath);
         }
     }
