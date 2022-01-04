@@ -54,9 +54,26 @@ new_git_ignore.write(git_ignore)
 new_cs_file.close
 
 # Python
+
+py_template = """from os import path
+
+dir_path = path.dirname(path.dirname(path.realpath(__file__)))
+f = open(f"{{dir_path}}/input.txt")
+lines = f.readlines()
+
+class Solution:
+    pass
+
+if __name__ == "__main__":
+    pass
+
+f.close()
+"""
 new_py_file = open(f'day_{day}/Python/day_{day}_a.py', 'w+')
+new_py_file.write(py_template)
 new_py_file.close()
 new_py_file = open(f'day_{day}/Python/day_{day}_b.py', 'w+')
+new_py_file.write(py_template)
 new_py_file.close()
 
 print("All files created")
