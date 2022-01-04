@@ -12,3 +12,8 @@ Years:
   - Python:  &nbsp;  &nbsp;  &nbsp; ![4%](https://progress-bar.dev/4)
   - C#:&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; ![8%](https://progress-bar.dev/8)
   - Rust:    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; ![0%](https://progress-bar.dev/0)
+
+Script usage:
+- add alias to your preferred shell
+- run script in 'year' folder
+- ![usage](https://cdn.discordapp.com/attachments/808679873837137940/927837060260315156/unknown.png)
