@@ -49,7 +49,7 @@ new_cs_file = open(f'day_{day}/C#/{dotnet_file_name}/Program.cs','w+')
 new_cs_file.write(class_description)
 new_cs_file.close()
 
-new_git_ignore = open(f'day_{day}/C#/{dotnet_file_name}/.gitingore', 'w+')
+new_git_ignore = open(f'day_{day}/C#/{dotnet_file_name}/.gitignore', 'w+')
 new_git_ignore.write(git_ignore)
 new_cs_file.close
 
