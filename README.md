@@ -9,8 +9,8 @@ Languages:
 
 Years:
 - [2015](2015)
-  - Python:  &nbsp;  &nbsp;  &nbsp; ![8%](https://progress-bar.dev/8)
-  - C#:&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; ![8%](https://progress-bar.dev/8)
+  - Python:  &nbsp;  &nbsp;  &nbsp; ![12%](https://progress-bar.dev/12)
+  - C#:&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; ![16%](https://progress-bar.dev/16)
   - Rust:    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; ![0%](https://progress-bar.dev/0)
 
 Script usage:
