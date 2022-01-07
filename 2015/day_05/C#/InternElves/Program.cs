@@ -5,12 +5,11 @@ class InternElves
 
     static void Main()
     {
-        Part1 part1 = new Part1();
+        // Part1 part1 = new Part1();
         Part2 part2 = new Part2();
         // var nNiceStrings = theStrings.Count(x => part1.IsStringNice(x));
-        // var newNiceStrings = theStrings.Count(x => part2.IsStringNice(x));
+        var newNiceStrings = theStrings.Count(x => part2.IsStringNice(x));
+        Console.WriteLine(newNiceStrings);
 
-        // Console.WriteLine(newNiceStrings);
-        Console.WriteLine(part2.IsStringNice("qjhvhtzxzqqjkmpb"));
     }
 }
