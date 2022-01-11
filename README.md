@@ -4,7 +4,7 @@
 Languages:
 - Python
 - C#
-- RUst
+- Rust
 
 
 Years:
